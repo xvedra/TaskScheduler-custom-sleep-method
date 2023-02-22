@@ -36,5 +36,5 @@ if(!iCurrent->canceled())
 
 Now you can sleep for all time between tasks.
 
-If your sleep method stop time like millis() remenber to use external_millis() in ALL software (in external libs too!)
+If your sleep method stop time like millis() remember to use external_millis() in ALL software (in external libs too!)
 
