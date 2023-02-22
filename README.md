@@ -11,7 +11,6 @@ unsigned long tu, mtu;
 
 mtu = 0xFFFFFFFF;
 
-....
 
 while (!iPaused && iCurrent) {
 
