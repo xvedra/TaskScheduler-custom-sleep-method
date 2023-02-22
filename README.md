@@ -1,4 +1,4 @@
-# TaskScheduler-custom-sleep-method
+# Arduino TaskScheduler-custom-sleep-method
 Call SleepMethod with minimal time to next task. Use it to sleep.
 
 In bool Scheduler::execute(), add/mod:
