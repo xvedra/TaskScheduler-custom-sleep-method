@@ -1,7 +1,7 @@
 # TaskScheduler-custom-sleep-method
 Call SleepMethod with minimal time to next task. Use it to sleep.
 
-In bool Scheduler::execute(), add:
+In bool Scheduler::execute(), add/mod:
 
 ....
 
@@ -33,7 +33,7 @@ if(!iCurrent->canceled())
 (*iSleepMethod)(mtu);
 
 
-Now you can sleep for all time betwen tasks.
+Now you can sleep for all time between tasks.
 
 If your sleep method stop time like millis() remenber to use external_millis() in ALL software (in external libs too!)
 
