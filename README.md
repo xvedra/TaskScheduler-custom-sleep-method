@@ -1,7 +1,8 @@
 # Arduino TaskScheduler-custom-sleep-method
-Call SleepMethod with minimal time to next task. Use it to sleep.
+Use the SleepMethod to minimize the time between tasks and put the board to sleep.
 
-In bool Scheduler::execute(), add/mod:
+To implement it, add or modify the following code in bool Scheduler::execute():
+```
 
 ....
 
@@ -32,9 +33,8 @@ if(!iCurrent->canceled())
 (*iSleepMethod)(mtu);
 
 ....
+```
 
+Now, the board can sleep for all the time between tasks.
 
-Now you can sleep for all time between tasks.
-
-If your sleep method stop time like millis() remember to use external_millis() in ALL software (in external libs too!)
-
+If your sleep method stops time like millis(), remember to use external_millis() in all software, including external libraries.
