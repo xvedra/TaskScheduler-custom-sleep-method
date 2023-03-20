@@ -214,6 +214,8 @@ void lowPowerMsec(uint32_t msec)
   #endif
   
   #ifdef USE_STM32F103
+  HAL_SuspendTick(); 
   LowPower.deepSleep(msec); 
+  HAL_ResumeTick();
   #endif
 }
